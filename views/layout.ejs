@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>New Sails App</title>
+<head>
+  <title>New Sails App</title>
 
-    <!-- Viewport mobile tag for sensible mobile support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Viewport mobile tag for sensible mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+  
     <!--  
         Stylesheets and Preprocessors
         ==============================
@@ -26,23 +26,41 @@
             + Change the order of your CSS files
             + Import stylesheets from other directories
             + Use a different or additional preprocessor, like SASS, SCSS or Stylus
-    -->
+          -->
 
-    <!--STYLES-->
-    <link rel="stylesheet" href="/styles/bootstrap-theme.css">
-    <link rel="stylesheet" href="/styles/bootstrap.css">
-    <link rel="stylesheet" href="/styles/importer.css">
-    <!--STYLES END-->
-  </head>
+          <!--STYLES-->
+          <link rel="stylesheet" href="/styles/bootstrap-theme.css">
+          <link rel="stylesheet" href="/styles/bootstrap.css">
+          <link rel="stylesheet" href="/styles/importer.css">
+          <!--STYLES END-->
+        </head>
 
-  <body>
-    <!--SCRIPTS-->
-    <script src="/js/dependencies/sails.io.js"></script>
-    <script src="/js/dependencies/angular.js"></script>
-    <script src="/js/spa.js"></script>
-    <!--SCRIPTS END-->
-    <%- body %>
+        <body>
+          
+          <!--SCRIPTS-->
+          <script src="/js/dependencies/sails.io.js"></script>
+          <script src="/js/dependencies/angular.js"></script>
+          <script src="/js/dependencies/jquery.js"></script>
+          <script src="/js/spa.js"></script>
+          <!--SCRIPTS END-->
+          <div class="navbar navbar-inverse navbar-fixed-top">
 
+            <div class="container">
+              <a class="navbar-brand" href="/#"> activityOverlord</a>
+            </div>
+          </div>
+          <%- body %>
+          <div class="container">
+            <hr>
+            <footer class="footer pull-right">
+              <div>
+                <a href="http://sailsjs.com/">sails.js</a>
+                <div>tutorial by irl nathan, with a bunch of help from cody, gabe, heather, mike, scott and zoli</div>
+              </div>
+            </footer>
+          </div>
+
+        </footer>
 
 
     <!--
@@ -64,11 +82,11 @@
             + Use a different template engine (handlebars, jade, dust, etc.)
             + Internationalize your client-side templates using a server-side
               stringfile before they're served.
-    -->
+            -->
 
-    <!--TEMPLATES-->
-    
-    <!--TEMPLATES END-->
+            <!--TEMPLATES-->
+            
+            <!--TEMPLATES END-->
 
 
     <!--
@@ -92,8 +110,8 @@
           + Import scripts from other directories
           + Use a different preprocessor, like TypeScript
 
-    -->
+        -->
 
 
-  </body>
-</html>
+      </body>
+      </html>
