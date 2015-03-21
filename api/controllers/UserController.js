@@ -8,6 +8,12 @@
 module.exports = {
 	'new': function (req,res) {
 		res.view();
+		if(err){
+        req.flash('err',err.ValidationError);
+        return res.redirect('/signup');
+      }
+
+
 	}
 };
 
